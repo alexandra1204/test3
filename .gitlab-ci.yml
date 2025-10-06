@@ -1,0 +1,16 @@
+stages:
+  - test
+
+variables:
+  PYTHONPATH: "."
+
+before_script:
+  - pip install -r requirements.txt
+
+test_job:
+  stage: test
+  script:
+    - pytest
+  artifacts:
+    paths:
+      - report.html
