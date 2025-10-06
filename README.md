@@ -1,6 +1,6 @@
-# QA Test
+# Test
 
-Имитация тестирования API авторизации.
+Проверка регистрации пользователя
 
 ---
 
@@ -9,10 +9,12 @@
 git clone
 cd test
 pip install -r requirements.txt
+```
 Запуск тестов
-
--pytest
-
+```bash
+pytest
+```
 или с HTML-отчётом:
-
--pytest --html=report.html
+```bash
+pytest --html=report.html
+```
