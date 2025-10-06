@@ -10,7 +10,8 @@ before_script:
 test_job:
   stage: test
   script:
-    - pytest
+    - pytest --alluredir=report
   artifacts:
     paths:
+      - report
       - report.html
